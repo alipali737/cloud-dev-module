@@ -1,0 +1,62 @@
+header {
+    width: 100%;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: palegoldenrod;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#left, #right {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#left {
+    background-color: paleturquoise;
+}
+
+#right {
+    background-color: palevioletred;
+}
+
+form {
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.form-group label {
+    flex-basis: 30%;
+    margin-left: 2rem;
+}
+
+.form-submit-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form-submit-group input[type="submit"] {
+    width: 75%;
+}
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Waqq.ly</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="resources/css/index.css">
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <header>
+            <h1 class="my-2 d-block">Waqq.ly</h1>
+            <h3 class="text-uppercase">meet your next dog walker</h3>
+        </header>
+        <main>
+            <div id="left">
+                <h3>Register your dog</h3>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="dogName">Dog Name:</label>
+                        <input type="text" id="dogName" name="dogName" required><br><br>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="dogGender">Dog Gender:</label>
+                        <div>
+                            <input type="radio" id="male" name="dogGender" value="Male"> Male<br>
+                            <input type="radio" id="female" name="dogGender" value="Female"> Female
+                        </div><br><br>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="dogBreed">Dog Breed:</label>
+                        <input type="text" id="dogBreed" name="dogBreed" required><br><br>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="dogBirthday">Dog Birthday:</label>
+                        <input type="date" id="dogBirthday" name="dogBirthday" required><br><br>
+                        <script>
+                            dogBirthday.max = new Date().toLocaleDateString('fr-ca')
+                        </script>
+                    </div>
+            
+                    <h3 class="ms-2">Owner Information:</h3>
+            
+                    <div class="form-group">
+                        <label for="ownerFullName">Full Name:</label>
+                        <input type="text" id="ownerFullName" name="ownerFullName" required><br><br>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="ownerPhoneNumber">Phone Number:</label>
+                        <input type="tel" id="ownerPhoneNumber" name="ownerPhoneNumber" required><br><br>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ownerEmail">Email:</label>
+                        <input type="email" id="ownerEmail" name="ownerEmail" required><br><br>
+                    </div>
+            
+                    <label class="ms-3"><strong>Address:</strong></label><br>
+                    <div class="form-group">
+                        <label for="ownerStreet">Street:</label>
+                        <input type="text" id="ownerStreet" name="ownerStreet" required><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="ownerCity">City:</label>
+                        <input type="text" id="ownerCity" name="ownerCity" required><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="ownerCounty">County:</label>
+                        <input type="text" id="ownerCounty" name="ownerCounty" required><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="ownerPostcode">Postcode:</label>
+                        <input type="text" id="ownerPostcode" name="ownerPostcode" required><br>
+                    </div>
+
+                    <div class="form-submit-group">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+            <div id="right">
+                <h3>Register as a walker</h3>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="walkerFullName">Full Name:</label>
+                        <input type="text" id="walkerFullName" name="walkerFullName" required><br><br>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="walkerPhoneNumber">Phone Number:</label>
+                        <input type="tel" id="walkerPhoneNumber" name="walkerPhoneNumber" required><br><br>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="walkerEmail">Email:</label>
+                        <input type="email" id="walkerEmail" name="walkerEmail" required><br><br>
+                    </div>
+            
+                    <label class="ms-3"><strong>Address:</strong></label><br>
+                    <div class="form-group">
+                        <label for="walkerStreet">Street:</label>
+                        <input type="text" id="walkerStreet" name="walkerStreet" required><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="walkerCity">City:</label>
+                        <input type="text" id="walkerCity" name="walkerCity" required><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="walkerCounty">County:</label>
+                        <input type="text" id="walkerCounty" name="walkerCounty" required><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="walkerPostcode">Postcode:</label>
+                        <input type="text" id="walkerPostcode" name="walkerPostcode" required><br>
+                    </div>
+
+                    <div class="form-submit-group">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
