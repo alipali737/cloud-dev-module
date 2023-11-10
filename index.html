@@ -20,7 +20,7 @@
         <main>
             <div id="left">
                 <h3>Register your dog</h3>
-                <form action="/httpbin.org/status/200" method="post">
+                <form action="https://02z3rs3dlg.execute-api.eu-west-2.amazonaws.com/prod/pets" method="post">
                     <div class="form-group">
                         <label for="dogName">Dog Name:</label>
                         <input type="text" id="dogName" name="dogName" required><br><br>
@@ -89,7 +89,7 @@
             </div>
             <div id="right">
                 <h3>Register as a walker</h3>
-                <form action="/httpbin.org/status/200" method="post">
+                <form action="https://02z3rs3dlg.execute-api.eu-west-2.amazonaws.com/prod/walkers" method="post">
                     <div class="form-group">
                         <label for="walkerFullName">Full Name:</label>
                         <input type="text" id="walkerFullName" name="walkerFullName" required><br><br>
