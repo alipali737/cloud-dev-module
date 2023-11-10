@@ -20,66 +20,66 @@
         <main>
             <div id="left">
                 <h3>Register your dog</h3>
-                <form action="https://02z3rs3dlg.execute-api.eu-west-2.amazonaws.com/prod/pets" method="post">
+                <form id="pets-form">
                     <div class="form-group">
-                        <label for="dogName">Dog Name:</label>
-                        <input type="text" id="dogName" name="dogName" required><br><br>
+                        <label for="DogName">Dog Name:</label>
+                        <input type="text" id="DogName" name="DogName" required><br><br>
                     </div>
             
                     <div class="form-group">
-                        <label for="dogGender">Dog Gender:</label>
+                        <label for="DogGender">Dog Gender:</label>
                         <div>
-                            <input type="radio" id="male" name="dogGender" value="Male"> Male<br>
-                            <input type="radio" id="female" name="dogGender" value="Female"> Female
+                            <input type="radio" id="male" name="DogGender" value="Male"> Male<br>
+                            <input type="radio" id="female" name="DogGender" value="Female"> Female
                         </div><br><br>
                     </div>
             
                     <div class="form-group">
-                        <label for="dogBreed">Dog Breed:</label>
-                        <input type="text" id="dogBreed" name="dogBreed" required><br><br>
+                        <label for="DogBreed">Dog Breed:</label>
+                        <input type="text" id="DogBreed" name="DogBreed" required><br><br>
                     </div>
             
                     <div class="form-group">
-                        <label for="dogBirthday">Dog Birthday:</label>
-                        <input type="date" id="dogBirthday" name="dogBirthday" required><br><br>
+                        <label for="DogBirthday">Dog Birthday:</label>
+                        <input type="date" id="DogBirthday" name="DogBirthday" required><br><br>
                         <script>
-                            dogBirthday.max = new Date().toLocaleDateString('fr-ca')
+                            DogBirthday.max = new Date().toLocaleDateString('fr-ca')
                         </script>
                     </div>
             
                     <h3 class="ms-2">Owner Information:</h3>
             
                     <div class="form-group">
-                        <label for="ownerFullName">Full Name:</label>
-                        <input type="text" id="ownerFullName" name="ownerFullName" required><br><br>
+                        <label for="OwnerName">Full Name:</label>
+                        <input type="text" id="OwnerName" name="OwnerName" required><br><br>
                     </div>
             
                     <div class="form-group">
-                        <label for="ownerPhoneNumber">Phone Number:</label>
-                        <input type="tel" id="ownerPhoneNumber" name="ownerPhoneNumber" required><br><br>
+                        <label for="OwnerNumber">Phone Number:</label>
+                        <input type="tel" id="OwnerNumber" name="OwnerNumber" required><br><br>
                     </div>
 
                     <div class="form-group">
-                        <label for="ownerEmail">Email:</label>
-                        <input type="email" id="ownerEmail" name="ownerEmail" required><br><br>
+                        <label for="OwnerEmail">Email:</label>
+                        <input type="email" id="OwnerEmail" name="OwnerEmail" required><br><br>
                     </div>
             
                     <label class="ms-3"><strong>Address:</strong></label><br>
                     <div class="form-group">
-                        <label for="ownerStreet">Street:</label>
-                        <input type="text" id="ownerStreet" name="ownerStreet" required><br>
+                        <label for="OwnerStreet">Street:</label>
+                        <input type="text" id="OwnerStreet" name="OwnerStreet" required><br>
                     </div>
                     <div class="form-group">
-                        <label for="ownerCity">City:</label>
-                        <input type="text" id="ownerCity" name="ownerCity" required><br>
+                        <label for="OwnerCity">City:</label>
+                        <input type="text" id="OwnerCity" name="OwnerCity" required><br>
                     </div>
                     <div class="form-group">
-                        <label for="ownerCounty">County:</label>
-                        <input type="text" id="ownerCounty" name="ownerCounty" required><br>
+                        <label for="OwnerCounty">County:</label>
+                        <input type="text" id="OwnerCounty" name="OwnerCounty" required><br>
                     </div>
                     <div class="form-group">
-                        <label for="ownerPostcode">Postcode:</label>
-                        <input type="text" id="ownerPostcode" name="ownerPostcode" required><br>
+                        <label for="OwnerPostcode">Postcode:</label>
+                        <input type="text" id="OwnerPostcode" name="OwnerPostcode" required><br>
                     </div>
 
                     <div class="form-submit-group">
@@ -89,34 +89,34 @@
             </div>
             <div id="right">
                 <h3>Register as a walker</h3>
-                <form action="https://02z3rs3dlg.execute-api.eu-west-2.amazonaws.com/prod/walkers" method="post">
+                <form id="walkers-form">
                     <div class="form-group">
-                        <label for="walkerFullName">Full Name:</label>
-                        <input type="text" id="walkerFullName" name="walkerFullName" required><br><br>
+                        <label for="WalkerName">Full Name:</label>
+                        <input type="text" id="WalkerName" name="WalkerName" required><br><br>
                     </div>
             
                     <div class="form-group">
-                        <label for="walkerPhoneNumber">Phone Number:</label>
-                        <input type="tel" id="walkerPhoneNumber" name="walkerPhoneNumber" required><br><br>
+                        <label for="WalkerNumber">Phone Number:</label>
+                        <input type="tel" id="WalkerNumber" name="WalkerNumber" required><br><br>
                     </div>
 
                     <div class="form-group">
-                        <label for="walkerEmail">Email:</label>
-                        <input type="email" id="walkerEmail" name="walkerEmail" required><br><br>
+                        <label for="WalkerEmail">Email:</label>
+                        <input type="email" id="WalkerEmail" name="WalkerEmail" required><br><br>
                     </div>
             
                     <label class="ms-3"><strong>Address:</strong></label><br>
                     <div class="form-group">
-                        <label for="walkerStreet">Street:</label>
-                        <input type="text" id="walkerStreet" name="walkerStreet" required><br>
+                        <label for="WalkerStreet">Street:</label>
+                        <input type="text" id="WalkerStreet" name="WalkerStreet" required><br>
                     </div>
                     <div class="form-group">
-                        <label for="walkerCity">City:</label>
-                        <input type="text" id="walkerCity" name="walkerCity" required><br>
+                        <label for="WalkerCity">City:</label>
+                        <input type="text" id="WalkerCity" name="WalkerCity" required><br>
                     </div>
                     <div class="form-group">
-                        <label for="walkerCounty">County:</label>
-                        <input type="text" id="walkerCounty" name="walkerCounty" required><br>
+                        <label for="WalkerCounty">County:</label>
+                        <input type="text" id="WalkerCounty" name="WalkerCounty" required><br>
                     </div>
                     <div class="form-group">
                         <label for="walkerPostcode">Postcode:</label>
@@ -128,6 +128,7 @@
                     </div>
                 </form>
             </div>
+            <script src="resources/js/index.js"></script>
         </main>
     </body>
 </html>

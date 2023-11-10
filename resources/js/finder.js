@@ -14,6 +14,7 @@ async function fetchPetDetails() {
         return response.json();
     })
     .then(data => {
+        console.log(data);
         return data;
     })
     .catch(error => {
@@ -59,7 +60,6 @@ async function getPets() {
     }
 }
 
-
 async function fetchWalkerDetails() {
     const events = await fetch('https://02z3rs3dlg.execute-api.eu-west-2.amazonaws.com/prod/walkers')
     .then(response => {
@@ -69,6 +69,7 @@ async function fetchWalkerDetails() {
         return response.json();
     })
     .then(data => {
+        console.log(data);
         return data;
     })
     .catch(error => {
