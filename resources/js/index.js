@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: formData,
+            body: JSON.stringify(formData),
         })
         .then(response => {
             if (!response.ok) {

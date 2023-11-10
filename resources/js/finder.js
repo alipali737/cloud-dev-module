@@ -40,7 +40,7 @@ async function getPets() {
         const pets = await fetchPetDetails()
 
         // Populate the table with pets data
-        for (const pet of pets) {
+        for (const pet of pets.items) {
             const row = document.createElement("tr");
             for (const key in pet) {
                 if (fieldsToDisplay.includes(key)) {
@@ -100,7 +100,7 @@ async function getWalkers() {
         const walkers = await fetchWalkerDetails()
 
         // Populate the table with walkers data
-        for (const walker of walkers) {
+        for (const walker of walkers.items) {
             const row = document.createElement("tr");
             for (const key in walker) {
                 if (fieldsToDisplay.includes(key)) {
