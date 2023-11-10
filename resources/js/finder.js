@@ -6,7 +6,12 @@ function loadTables() {
 }
 
 async function fetchPetDetails() {
-    const events = await fetch('https://02z3rs3dlg.execute-api.eu-west-2.amazonaws.com/prod/pets')
+    const events = await fetch('https://02z3rs3dlg.execute-api.eu-west-2.amazonaws.com/prod/pets', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    })
     .then(response => {
         if (!response.ok) {
             throw new Error('Error fetching pet details: Request failed with status ' + response.status);
@@ -61,7 +66,12 @@ async function getPets() {
 }
 
 async function fetchWalkerDetails() {
-    const events = await fetch('https://02z3rs3dlg.execute-api.eu-west-2.amazonaws.com/prod/walkers')
+    const events = await fetch('https://02z3rs3dlg.execute-api.eu-west-2.amazonaws.com/prod/walkers', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    })
     .then(response => {
         if (!response.ok) {
             throw new Error('Error fetching pet details: Request failed with status ' + response.status);

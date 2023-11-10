@@ -12,5 +12,15 @@ export const handler = async () => {
 
     const response = await ddbDocClient.send(command);
     console.log(response.Items);
-    return response;
+    const httpResponse = {
+        statusCode: response.$metadata['httpStatusCode'],
+        requestId: response.$metadata['requestId'],
+        headers: {
+            "Access-Control-Allow-Headers": "Content-Type",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "OPTIONS,POST,GET"
+        },
+        Items: response.Items,
+    }
+    return httpResponse;
 };

@@ -27,12 +27,16 @@ export const handler = async (event) => {
             owner_city: requestBody.OwnerCity,
             owner_county: requestBody.OwnerCounty,
             owner_postcode: requestBody.OwnerPostcode,
-            returnable: 1,
         },
     }));
 
     const response = {
         statusCode: 201,
+        headers: {
+            "Access-Control-Allow-Headers": "Content-Type",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "OPTIONS,POST,GET"
+        },
         body: JSON.stringify({
             PetId: petId,
         }),
