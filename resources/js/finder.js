@@ -32,8 +32,8 @@ async function getPets() {
     // Clear existing table data
     const tableBody = document.getElementById("pets-table-body");
     tableBody.innerHTML = "";
-
-    const fieldsToDisplay = []
+    
+    const fieldsToDisplay = ["dog_name", "dog_gender", "dog_breed", "owner_name", "owner_city"]
 
     try {
         // Get pets from backend
@@ -93,7 +93,7 @@ async function getWalkers() {
     const tableBody = document.getElementById("walkers-table-body");
     tableBody.innerHTML = "";
 
-    const fieldsToDisplay = []
+    const fieldsToDisplay = ["walker_name", "walker_city"]
 
     try {
         // Get walkers from backend
