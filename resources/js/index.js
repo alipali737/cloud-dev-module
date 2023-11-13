@@ -29,12 +29,14 @@ async function submitWalkerForm(event) {
     response.json().then((data) => {
         console.log(data);
     });
+    
+    location.reload();
 }
 
 const petsForm = document.getElementById("pets-form");
-petsForm.addEventListener('submit', submitWalkerForm);
+petsForm.addEventListener('submit', submitPetsForm);
 
-async function submitWalkerForm(event) {
+async function submitPetsForm(event) {
     event.preventDefault();
     var formData = {};
     var formElements = event.target.elements;
@@ -60,4 +62,6 @@ async function submitWalkerForm(event) {
     response.json().then((data) => {
         console.log(data);
     });
+
+    location.reload();
 }
