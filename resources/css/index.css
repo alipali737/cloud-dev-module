@@ -108,6 +108,12 @@ th, td {
 }
 
 th {
+    color: white;
+    background-color: #333;
+}
+
+td {
+    color: black;
     background-color: whitesmoke;
 }
 
